@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="CucumberDemo" tests="1" started="1" failures="1" errors="0" ignored="0">
+  <testsuite name="com.CG.TestRunner.TestRunner" time="12.619">
+    <testsuite name="Login" time="12.619">
+      <testcase name="Login into the application" classname="Login" time="12.619">
+        <failure>junit.framework.AssertionFailedError&#13;
+	at junit.framework.Assert.fail(Assert.java:55)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:22)&#13;
+	at junit.framework.Assert.assertTrue(Assert.java:31)&#13;
+	at com.CG.StepDefinition.LoginStepDef.user_should_be_able_to_login_succesfully(LoginStepDef.java:35)&#13;
+	at ✽.user should be able to login succesfully(file:///C:/Users/Rajasekar.Murugesan/eclipse-workspace/CucumberDemo/Feature/login.feature:17)&#13;
+&#13;
+</failure>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

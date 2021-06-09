@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="CucumberDemo" tests="5" started="5" failures="0" errors="1" ignored="0">
+  <testsuite name="com.CG.TestRunner.TestRunner" time="0.275">
+    <testsuite name="Registration process" time="0.191">
+      <testcase name="Registering into an application" classname="Registration process" time="0.191">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'The user gives the details' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("The user gives the details")
+public void the_user_gives_the_details(io.cucumber.datatable.DataTable dataTable) {
+    // Write code here that turns the phrase above into concrete actions
+    // For automatic transformation, change DataTable to one of
+    // E, List&lt;E&gt;, List&lt;List&lt;E&gt;&gt;, List&lt;Map&lt;K,V&gt;&gt;, Map&lt;K,V&gt; or
+    // Map&lt;K, List&lt;V&gt;&gt;. E,K,V must be a String, Integer, Float,
+    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+    //
+    // For other transformations you can register a DataTableType.
+    throw new io.cucumber.java.PendingException();
+}
+@When("The user enters submit")
+public void the_user_enters_submit() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user should be able to login successfully")
+public void user_should_be_able_to_login_successfully() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Login" time="0.082">
+      <testcase name="Login into the application" classname="Login" time="0.013"/>
+      <testcase name="Negative Login into the application #1" classname="Login" time="0.006"/>
+      <testcase name="Negative Login into the application #2" classname="Login" time="0.005"/>
+      <testcase name="Negative Login into the application #3" classname="Login" time="0.058"/>
+    </testsuite>
+  </testsuite>
+</testrun>

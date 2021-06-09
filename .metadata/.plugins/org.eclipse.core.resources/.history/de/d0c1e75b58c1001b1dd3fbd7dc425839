@@ -1,0 +1,40 @@
+package com.cg.seleniumdemoproject;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class AmazonDemoDB {
+	WebDriver driver;
+	public AmazonDemoDB()
+	{
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rajasekar.Murugesan\\Documents\\selenium gow\\tutor\\chromedriver_win32\\chromedriver.exe");
+		driver=new ChromeDriver();
+		
+	}
+	public void AmazonSignIn() throws SQLException
+	{
+		driver.get("https://www.amazon.in");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.findElement(By.linkText("Sign in")).click();
+		String host="localhost";
+		String port="3306";
+		Connection c=DriverManager.getConnection("jbdc:mysql://"+host+":"+port+"/schema1", "admin", "admin");
+		Statement s=c.createStatement();
+		ResultSet rs=s.executeQuery("select * from user_detail where name='gowthami'");
+	    driver.findElement(By.xpath("//input[@type='email']")).sendKeys(rs.getString("uname"));
+	    driver.findElement(By.xpath("//input[@id='continue']")).click();
+	    driver.findElement(By.xpath("//input[@type='password']")).sendKeys(rs.getString("password"));
+	    driver.findElement(By.xpath("//*[@id='auth-signin-button']")).click();
+		
+	}
+
+}

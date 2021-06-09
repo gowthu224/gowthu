@@ -1,0 +1,325 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-27T11:09:04.789Z",
+        "line": 2,
+        "name": "Registering into an application",
+        "description": "",
+        "id": "registration-process;registering-into-an-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is on login page",
+            "match": {
+              "location": "com.CG.StepDefinition.LoginStepDef.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "The user gives the details",
+            "match": {
+              "location": "com.CG.StepDefinition.LoginStepDef.the_user_gives_the_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "user",
+                  "Gowthami"
+                ]
+              },
+              {
+                "cells": [
+                  "Password",
+                  "12345"
+                ]
+              },
+              {
+                "cells": [
+                  "Mobile",
+                  "984***7489"
+                ]
+              },
+              {
+                "cells": [
+                  "Company",
+                  "CG"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "The user enters submit",
+            "match": {
+              "location": "com.CG.StepDefinition.LoginStepDef.the_user_enters_submit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should be able to login succesfully",
+            "match": {
+              "location": "com.CG.StepDefinition.LoginStepDef.user_should_be_able_to_login_succesfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Registration process",
+    "description": "",
+    "id": "registration-process",
+    "keyword": "Feature",
+    "uri": "file:Feature/Registration.feature",
+    "tags": []
+  },
+  {
+    "line": 13,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-27T11:09:04.911Z",
+        "line": 14,
+        "name": "Login into the application",
+        "description": "",
+        "id": "login;login-into-the-application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User is on login page",
+            "match": {
+              "location": "com.CG.StepDefinition.LoginStepDef.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "The user gives \"gowthu224@gmail.com\" and \"AK@2504\" in corresponding field and click on submit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gowthu224@gmail.com\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"AK@2504\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.CG.StepDefinition.LoginStepDef.the_user_gives_and_in_corresponding_field_and_click_on_submit(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user should be able to login succesfully",
+            "match": {
+              "location": "com.CG.StepDefinition.LoginStepDef.user_should_be_able_to_login_succesfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-27T11:09:04.924Z",
+        "line": 25,
+        "name": "Negative Login into the application",
+        "description": "",
+        "id": "login;negative-login-into-the-application;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User is on login page",
+            "match": {
+              "location": "com.CG.StepDefinition.LoginStepDef.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "The user gives \"\" and \"AK@2504\" in corresponding field and click on submit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"AK@2504\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.CG.StepDefinition.LoginStepDef.the_user_gives_and_in_corresponding_field_and_click_on_submit(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user should not be able to login succesfully.",
+            "match": {
+              "location": "com.CG.StepDefinition.LoginStepDef.user_should_not_be_able_to_login_succesfully(io.cucumber.datatable.DataTable)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-27T11:09:04.932Z",
+        "line": 26,
+        "name": "Negative Login into the application",
+        "description": "",
+        "id": "login;negative-login-into-the-application;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User is on login page",
+            "match": {
+              "location": "com.CG.StepDefinition.LoginStepDef.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "The user gives \"gowthu\" and \"\" in corresponding field and click on submit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gowthu\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.CG.StepDefinition.LoginStepDef.the_user_gives_and_in_corresponding_field_and_click_on_submit(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user should not be able to login succesfully.",
+            "match": {
+              "location": "com.CG.StepDefinition.LoginStepDef.user_should_not_be_able_to_login_succesfully(io.cucumber.datatable.DataTable)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-05-27T11:09:04.940Z",
+        "line": 27,
+        "name": "Negative Login into the application",
+        "description": "",
+        "id": "login;negative-login-into-the-application;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User is on login page",
+            "match": {
+              "location": "com.CG.StepDefinition.LoginStepDef.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "The user gives \"gowthu\" and \"AK\" in corresponding field and click on submit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"gowthu\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"AK\"",
+                  "offset": 28
+                }
+              ],
+              "location": "com.CG.StepDefinition.LoginStepDef.the_user_gives_and_in_corresponding_field_and_click_on_submit(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user should not be able to login succesfully.",
+            "match": {
+              "location": "com.CG.StepDefinition.LoginStepDef.user_should_not_be_able_to_login_succesfully(io.cucumber.datatable.DataTable)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:Feature/login.feature",
+    "tags": []
+  }
+]

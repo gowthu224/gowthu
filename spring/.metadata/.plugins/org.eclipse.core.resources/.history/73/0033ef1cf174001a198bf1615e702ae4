@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: account-service
+spring:
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared
+  profiles:
+     active: native
+  security:
+    user:
+      password: jana123
+
+server:
+  port: 8888
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="CucumberDemo" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.CG.TestRunner.TestRunner" time="0.163">
+    <testsuite name="Login" time="0.163">
+      <testcase name="Login into the application" classname="Login" time="0.163">
+        <error>io.cucumber.junit.UndefinedStepException: The step 'The user gives "gowthu224@gmail.com" and "AK@2504" in corresponding field and click on submit' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("The user gives {string} and {string} in corresponding field and click on submit")
+public void the_user_gives_and_in_corresponding_field_and_click_on_submit(String string, String string2) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

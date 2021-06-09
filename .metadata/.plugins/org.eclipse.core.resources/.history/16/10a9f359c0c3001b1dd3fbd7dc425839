@@ -1,0 +1,9 @@
+package com.cg.seleniumdemoproject;
+
+public class UserDetailDTO {
+	
+	private String name;
+	private String userName;
+	private Strint emailId;
+
+}

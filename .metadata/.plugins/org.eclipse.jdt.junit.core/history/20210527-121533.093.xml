@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="CucumberDemo" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="com.CG.TestRunner.TestRunner" time="0.652">
+    <testsuite name="Registration process" time="0.477">
+      <testcase name="Registering into an application" classname="Registration process" time="0.477"/>
+    </testsuite>
+    <testsuite name="Login" time="0.175">
+      <testcase name="Login into the application" classname="Login" time="0.028"/>
+      <testcase name="Negative Login into the application #1" classname="Login" time="0.026"/>
+      <testcase name="Negative Login into the application #2" classname="Login" time="0.011"/>
+      <testcase name="Negative Login into the application #3" classname="Login" time="0.11"/>
+    </testsuite>
+  </testsuite>
+</testrun>

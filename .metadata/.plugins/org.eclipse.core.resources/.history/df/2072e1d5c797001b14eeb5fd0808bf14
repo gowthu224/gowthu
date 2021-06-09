@@ -1,0 +1,21 @@
+package com.tutorial.automation;
+
+import java.util.ArrayList;
+
+public class lists_toHashmap {
+	public static void main(String[] args) {
+	ArrayList<String> a=new ArrayList<String>();
+	a.add("apple");
+	a.add("banana");
+	a.add("grapes");
+	a.add("kiwi");
+	System.out.println(a);
+	ArrayList<Integer> b=new ArrayList<Integer>();
+	b.add(111);
+	b.add(222);
+	b.add(333);
+	b.add(333);
+	System.out.println(b);
+	
+	}
+}

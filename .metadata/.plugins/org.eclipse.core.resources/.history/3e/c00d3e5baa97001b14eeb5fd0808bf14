@@ -1,0 +1,14 @@
+package com.tutorial.automation;
+
+public class character_duplicate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="ththisIklpp";
+		char[] char=s.toCharArray();
+		System.out.println(char.length);
+		
+
+	}
+
+}

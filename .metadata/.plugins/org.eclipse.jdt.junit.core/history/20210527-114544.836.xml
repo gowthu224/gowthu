@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="CucumberDemo" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.CG.TestRunner.TestRunner" time="0.233">
+    <testsuite name="Login" time="0.233">
+      <testcase name="Login into the application" classname="Login" time="0.174"/>
+      <testcase name="Negative Login into the application" classname="Login" time="0.059"/>
+    </testsuite>
+  </testsuite>
+</testrun>

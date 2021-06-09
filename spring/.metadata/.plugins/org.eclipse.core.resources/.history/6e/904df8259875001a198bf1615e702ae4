@@ -1,0 +1,9 @@
+package com.piggymetrics.account.repository;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class InMemoryAccountRepository {
+
+	
+}

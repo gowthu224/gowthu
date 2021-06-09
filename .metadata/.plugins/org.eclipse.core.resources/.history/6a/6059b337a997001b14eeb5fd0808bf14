@@ -1,0 +1,12 @@
+package com.tutorial.automation;
+
+public class string_toarray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s="this is a toy";
+		String[] ss=s.split(" ");
+		System.out.println(ss[0]);
+	}
+
+}

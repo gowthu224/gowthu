@@ -1,0 +1,10 @@
+1585143283317	Delete element
+1585143287946	Delete element
+1585143297167	Delete element
+1585209960690	Rename package 'com.test.app.simple'
+1585209976788	Rename package 'com.test.app.simple.rest'
+1585209992580	Rename package 'com.test.app.simple.service'
+1585210004466	Rename package 'com.test.app.jwt.service'
+1585215044054	Delete element
+1585215283723	Delete element
+1585215368978	Encapsulate field 'jwtToken'

@@ -1,0 +1,29 @@
+package com.piggymetrics.account.repository;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.stereotype.Service;
+
+import com.piggymetrics.account.domain.Account;
+
+@Service
+public class InMemoryAccountRepository {
+	
+	List<Account> accountList=new ArrayList<Account>();
+	
+	@PostConstruct
+	public void createList() {
+		accountList.add(new Account("demo",new Date()));
+		accountList.add(new Account("Jana",new Date()));
+		accountList.add(new Account("raj",new Date()));
+		accountList.add(new Account("mithran",new Date()));
+	}
+
+	Account findByName(String name) {
+		accountList.s
+	}
+}

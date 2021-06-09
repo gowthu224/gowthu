@@ -1,0 +1,6 @@
+Feature: Registration process
+Scenario: Registering into an application
+Given User is on login page
+When The user gives the details
+When The user enters submit
+Then user should be able to login successfully

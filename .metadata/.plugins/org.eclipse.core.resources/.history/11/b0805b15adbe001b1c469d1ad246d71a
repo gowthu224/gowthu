@@ -1,0 +1,40 @@
+package com.CG.StepDefinition;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import junit.framework.Assert;
+
+public class LoginStepDef {
+	WebDriver driver;
+	@Given("User is on login page")
+	public void user_is_on_login_page() {
+	    System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rajasekar.Murugesan\\Documents\\selenium gow\\tutor\\chromedriver_win32\\chromedriver.exe");
+	    driver=new ChromeDriver();
+	    driver.get("https://www.amazon.in");
+	    driver.manage().window().maximize();
+	    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	}
+	@When("The user gives username and Password in corresponding field and click on submit")
+	public void the_user_gives_username_and_password_in_corresponding_field_and_click_on_submit() {
+	    driver.findElement(By.linkText("Sign in")).click();
+	    driver.findElement(By.xpath("//input[@type='email']")).sendKeys("gowthu224@gmail.com");
+	    driver.findElement(By.xpath("//input[@id='continue']")).click();
+	    driver.findElement(By.xpath("//input[@type='password']")).sendKeys("AK@2504");
+	    driver.findElement(By.xpath("//*[@id='auth-signin-button']")).click();
+	    //System.out.println(driver.getTitle());
+	}
+	@Then("user should be able to login succesfully")
+	public void user_should_be_able_to_login_succesfully() {
+	    Assert.assertTrue(driver.getTitle().contains("Online Shopping site in India"));
+	    System.out.println(driver.getTitle());
+	    driver.close();
+	}
+	
+}

@@ -1,0 +1,16 @@
+package com.piggymetrics.account.repository;
+
+import org.springframework.stereotype.Service;
+
+import com.piggymetrics.account.domain.Account;
+
+@Service
+public class InMemoryAccountRepository {
+	
+	List<Account> accountList;
+	
+
+	Account findByName(String name) {
+		
+	}
+}

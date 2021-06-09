@@ -1,0 +1,21 @@
+package com.cg.seleniumdemoproject;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Opengoogle {
+	WebDriver driver;
+	public Opengoogle()
+	{
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Rajasekar.Murugesan\\Documents\\selenium gow\\tutor\\chromedriver_win32\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.get("https://www.google.com/");
+		System.out.println(driver.getCurrentUrl());
+		System.out.println(driver.getTitle());
+		System.out.println(driver.getPageSource());
+		
+	}
+	
+	
+	
+}
